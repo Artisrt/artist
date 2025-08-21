@@ -45,3 +45,9 @@
 * Email: artist-AK@yandex.ru
 * Telegram: @AK_Anna_K
 * LinkedIn: [anna-kavun](https://www.linkedin.com/in/anna-kavun-71b516235/)
+
+  ---
+
+### :writing_hand: Blog Posts :
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
