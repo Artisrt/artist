@@ -17,6 +17,7 @@
 * [Приложение To-Do List](https://artisrt.github.io/todo-app/)
 * [Строительный проект](https://artisrt.github.io/Evklid/)
 * [Проект "Список студентов"](https://artisrt.github.io/list-of-students/)
+* [Приложение "Card-game"](https://artisrt.github.io/card-game/)
 
 ## Технологии и инструменты
 
