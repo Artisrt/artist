@@ -2,15 +2,25 @@ name: Latest blog post workflow
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # Запуск ежедневно в 01:00
+    - cron: '0 8 * * *' # Ежедневно в 8:00
   workflow_dispatch:
 
 jobs:
   update-readme-with-blog:
-    name: Update README with latest blog posts
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Pull in Habr posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://dev.to/feed/artist"  
+        feed_list: "https://dev.to/feed/artist"  
+          max_post_count: "5"
+          template: |
+            - **${{title}}**
+              * ${{published_at}}
+              {{description}}
+              [Читать →]({{link}})
+          description_length: "150"
+         
